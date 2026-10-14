@@ -1,0 +1,10 @@
+{
+    "$schema": "../node_modules/@voguh/unichat-widgets/fields-schema.json",
+    "maxRenderedEvents": {
+        "type": "number",
+        "label": "Maximum rendered events",
+        "value": 50,
+        "min": 50,
+        "step": 1
+    }
+}

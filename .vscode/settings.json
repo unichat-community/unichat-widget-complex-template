@@ -1,0 +1,30 @@
+{
+    "js/ts.tsdk.path": "./node_modules/typescript/lib",
+
+    "biome.configurationPath": "./biome.json",
+
+    "[javascript]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[javascriptreact]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[typescript]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[typescriptreact]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[json]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[jsonc]": { "editor.defaultFormatter": "biomejs.biome" },
+    "[css]": { "editor.defaultFormatter": "biomejs.biome" },
+
+    "json.schemaDownload.trustedDomains": {
+        "https://schemastore.azurewebsites.net/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://www.schemastore.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://spec.openapis.org/": true,
+        "https://json-schema.org/": true,
+        "https://developer.microsoft.com/json-schemas/": true,
+        "https://cdn.jsdelivr.net/gh/voguh/": true
+    },
+
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.biome": "always"
+    }
+}

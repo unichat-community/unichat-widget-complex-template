@@ -1,0 +1,33 @@
+{
+    "name": "@unichat-community/unichat-widget-complex-template",
+    "version": "1.0.0",
+    "description": "A UniChat template widget using rspack bundler",
+    "author": "Voguh <voguhofc@protonmail.com>",
+    "license": "EPL-2.0",
+    "homepage": "https://github.com/unichat-community/unichat-widget-complex-template",
+    "private": true,
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development rspack build --watch",
+        "build": "cross-env NODE_ENV=production rspack build",
+        "lint": "biome check .",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@preact/signals": "2.11.3",
+        "@voguh/unichat-widgets": "https://github.com/voguh/unichat/releases/download/1.5.0-beta.7/unichat-widgets-1.5.0-beta.7.tgz",
+        "preact": "11.0.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "2.5.15",
+        "@rspack/cli": "2.2.8",
+        "@rspack/core": "2.2.8",
+        "@tailwindcss/postcss": "4.3.3",
+        "@types/node": "24.19.1",
+        "@voguh/unichat-widgets-rspack": "https://github.com/voguh/unichat-widgets-rspack/releases/download/0.1.0/unichat-widgets-rspack-0.1.0.tgz",
+        "cross-env": "10.1.0",
+        "postcss": "8.5.29",
+        "postcss-loader": "8.2.1",
+        "tailwindcss": "4.3.3",
+        "typescript": "7.0.2"
+    }
+}

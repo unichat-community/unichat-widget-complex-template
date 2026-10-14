@@ -1,0 +1,88 @@
+{
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+    "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true, "root": "./" },
+    "files": {
+        "includes": [
+            "**",
+            "!!**/{dist,widget,node_modules}/**"
+        ]
+    },
+    "formatter": {
+        "enabled": true,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineWidth": 120,
+        "lineEnding": "lf"
+    },
+    "linter": {
+        "enabled": true,
+        "domains": {  "react": "recommended" },
+        "rules": {
+            "preset": "recommended",
+            "complexity": {
+                "noUselessConstructor": "off"
+            },
+            "correctness": {
+                "noUnusedVariables": "warn",
+                "useExhaustiveDependencies": {
+                    "level": "error",
+                    "options": { "hooks": [{ "name": "useSignal", "stableResult": true }] }
+                }
+            },
+            "style": {
+                "useConst": "warn",
+                "noNonNullAssertion": "off",
+                "noDescendingSpecificity": "off",
+                "useConsistentObjectDefinitions": { "level": "error", "options": { "syntax": "explicit" } },
+                "noRestrictedImports": {
+                    "level": "error",
+                    "options": { "patterns": [{ "group": ["..", "**/..", "**/../**"], "message": "Use alias instead `../`" }] }
+                }
+            },
+            "suspicious": {
+                "noExplicitAny": "off",
+                "noEmptyBlockStatements": "off"
+            }
+        }
+    },
+    "javascript": {
+        "formatter": {
+            "quoteStyle": "double",
+            "semicolons": "always",
+            "arrowParentheses": "always",
+            "trailingCommas": "none"
+        },
+        "globals": ["navigator", "window", "document"]
+    },
+    "css": {
+        "parser": {
+            "cssModules": true,
+            "tailwindDirectives": true
+        }
+    },
+    "json": {
+        "formatter": { "enabled": false },
+        "linter": { "enabled": false }
+    },
+    "assist": {
+        "enabled": true,
+        "actions": {
+            "source": {
+                "organizeImports": {
+                    "level": "on",
+                    "options": {
+                        "groups": [
+                            ["preact", "preact/**", ":NODE:"],
+                            ":BLANK_LINE:",
+                            [":PACKAGE:", "!~*/**", "!preact", "!preact/**"],
+                            ":BLANK_LINE:",
+                            ["~*/**"],
+                            ":BLANK_LINE:",
+                            ["./**", "../**"]
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
