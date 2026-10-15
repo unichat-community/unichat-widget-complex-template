@@ -8,7 +8,7 @@
  * SPDX-License-Identifier: EPL-2.0
  ******************************************************************************/
 
-import type { UniChatEvent } from "@voguh/unichat-widgets";
+import type { UniChatEvent } from "@voguh/unichat-api/widgets/events";
 
 import type { ControlUniChatEvent } from "~/types";
 

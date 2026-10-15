@@ -12,7 +12,7 @@ import type * as PReact from "preact";
 import { useEffect } from "preact/hooks";
 
 import { useSignal } from "@preact/signals";
-import type { UniChatEvent } from "@voguh/unichat-widgets";
+import type { UniChatEvent } from "@voguh/unichat-api/widgets/events";
 
 import type { ControlUniChatEvent, RenderableUniChatEvent } from "./types";
 import { MAX_RENDERED_EVENTS } from "./utils/constants";

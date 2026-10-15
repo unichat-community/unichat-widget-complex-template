@@ -20,7 +20,7 @@ import type {
     UniChatEventSponsor,
     UniChatEventSponsorGift,
     UniChatEventUserstoreUpdate
-} from "@voguh/unichat-widgets";
+} from "@voguh/unichat-api/widgets/events";
 
 export type ControlUniChatEvent = UniChatEventClear | UniChatEventRemoveMessage | UniChatEventRemoveAuthor;
 
