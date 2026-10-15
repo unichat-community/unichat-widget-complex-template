@@ -1,5 +1,5 @@
 {
-    "$schema": "../node_modules/@voguh/unichat-widgets/fields-schema.json",
+    "$schema": "../node_modules/@voguh/unichat-api/widgets/fields-schema.json",
     "maxRenderedEvents": {
         "type": "number",
         "label": "Maximum rendered events",

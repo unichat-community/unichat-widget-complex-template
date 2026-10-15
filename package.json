@@ -14,7 +14,6 @@
     },
     "dependencies": {
         "@preact/signals": "2.11.3",
-        "@voguh/unichat-widgets": "https://github.com/voguh/unichat/releases/download/1.5.0-beta.7/unichat-widgets-1.5.0-beta.7.tgz",
         "preact": "11.0.0"
     },
     "devDependencies": {
@@ -23,7 +22,8 @@
         "@rspack/core": "2.2.8",
         "@tailwindcss/postcss": "4.3.3",
         "@types/node": "24.19.1",
-        "@voguh/unichat-widgets-rspack": "https://github.com/voguh/unichat-widgets-rspack/releases/download/0.1.0/unichat-widgets-rspack-0.1.0.tgz",
+        "@voguh/unichat-api": "https://github.com/voguh/unichat/releases/download/1.5.0-beta.8/unichat-api-1.5.0-beta.8.tgz",
+        "@voguh/unichat-widgets-rspack": "https://github.com/voguh/unichat-widgets-rspack/releases/download/0.2.0/unichat-widgets-rspack-0.2.0.tgz",
         "cross-env": "10.1.0",
         "postcss": "8.5.29",
         "postcss-loader": "8.2.1",

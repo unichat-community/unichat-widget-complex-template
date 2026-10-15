@@ -11,9 +11,6 @@ importers:
       '@preact/signals':
         specifier: 2.11.3
         version: 2.11.3(preact@11.0.0)
-      '@voguh/unichat-widgets':
-        specifier: https://github.com/voguh/unichat/releases/download/1.5.0-beta.7/unichat-widgets-1.5.0-beta.7.tgz
-        version: https://github.com/voguh/unichat/releases/download/1.5.0-beta.7/unichat-widgets-1.5.0-beta.7.tgz
       preact:
         specifier: 11.0.0
         version: 11.0.0
@@ -33,9 +30,12 @@ importers:
       '@types/node':
         specifier: 24.19.1
         version: 24.19.1
+      '@voguh/unichat-api':
+        specifier: https://github.com/voguh/unichat/releases/download/1.5.0-beta.8/unichat-api-1.5.0-beta.8.tgz
+        version: https://github.com/voguh/unichat/releases/download/1.5.0-beta.8/unichat-api-1.5.0-beta.8.tgz
       '@voguh/unichat-widgets-rspack':
-        specifier: https://github.com/voguh/unichat-widgets-rspack/releases/download/0.1.0/unichat-widgets-rspack-0.1.0.tgz
-        version: https://github.com/voguh/unichat-widgets-rspack/releases/download/0.1.0/unichat-widgets-rspack-0.1.0.tgz(@rspack/core@2.2.8)(@voguh/unichat-widgets@https://github.com/voguh/unichat/releases/download/1.5.0-beta.7/unichat-widgets-1.5.0-beta.7.tgz)
+        specifier: https://github.com/voguh/unichat-widgets-rspack/releases/download/0.2.0/unichat-widgets-rspack-0.2.0.tgz
+        version: https://github.com/voguh/unichat-widgets-rspack/releases/download/0.2.0/unichat-widgets-rspack-0.2.0.tgz(@rspack/core@2.2.8)(@voguh/unichat-api@https://github.com/voguh/unichat/releases/download/1.5.0-beta.8/unichat-api-1.5.0-beta.8.tgz)
       cross-env:
         specifier: 10.1.0
         version: 10.1.0
@@ -510,17 +510,17 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@voguh/unichat-widgets-rspack@https://github.com/voguh/unichat-widgets-rspack/releases/download/0.1.0/unichat-widgets-rspack-0.1.0.tgz':
-    resolution: {integrity: sha512-YEItoDy9gQFtVLVa/GEmpLboJ6mckzG78O0EN8/Dq39iQEcRtSiMsjcXsIWoGJvF4LwlYEljodpTSVD4LuaHig==, tarball: https://github.com/voguh/unichat-widgets-rspack/releases/download/0.1.0/unichat-widgets-rspack-0.1.0.tgz}
-    version: 0.1.0
+  '@voguh/unichat-api@https://github.com/voguh/unichat/releases/download/1.5.0-beta.8/unichat-api-1.5.0-beta.8.tgz':
+    resolution: {integrity: sha512-CSzUmMlEshcK8LZ4/JGb2TRXGuOr0RIHWsXKp3cDxI8dUxWDgjbTBY4V9abKbrk63cf5dzUxuEVDixfuR4drcA==, tarball: https://github.com/voguh/unichat/releases/download/1.5.0-beta.8/unichat-api-1.5.0-beta.8.tgz}
+    version: 1.5.0-beta.8
+
+  '@voguh/unichat-widgets-rspack@https://github.com/voguh/unichat-widgets-rspack/releases/download/0.2.0/unichat-widgets-rspack-0.2.0.tgz':
+    resolution: {integrity: sha512-+RD1GcazzsTlrQdvs9vQDCuHV8yyXZcu4Ga/5ULjaw9hA2XceAyQtp3Vr1dl2ej9sasNX44tVObF9v/KIebZhw==, tarball: https://github.com/voguh/unichat-widgets-rspack/releases/download/0.2.0/unichat-widgets-rspack-0.2.0.tgz}
+    version: 0.2.0
     hasBin: true
     peerDependencies:
       '@rspack/core': '>=2.0.0'
-      '@voguh/unichat-widgets': '*'
-
-  '@voguh/unichat-widgets@https://github.com/voguh/unichat/releases/download/1.5.0-beta.7/unichat-widgets-1.5.0-beta.7.tgz':
-    resolution: {integrity: sha512-D+xegT+mm63tUf0h9A+83evuL56JKBgxJwivKnDDWzUQBOosyjH9yUOAHtKqnTMXgAtdtygd5S2fvWXzbKcjYg==, tarball: https://github.com/voguh/unichat/releases/download/1.5.0-beta.7/unichat-widgets-1.5.0-beta.7.tgz}
-    version: 1.5.0-beta.7
+      '@voguh/unichat-api': '*'
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
@@ -1084,14 +1084,14 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
-  '@voguh/unichat-widgets-rspack@https://github.com/voguh/unichat-widgets-rspack/releases/download/0.1.0/unichat-widgets-rspack-0.1.0.tgz(@rspack/core@2.2.8)(@voguh/unichat-widgets@https://github.com/voguh/unichat/releases/download/1.5.0-beta.7/unichat-widgets-1.5.0-beta.7.tgz)':
-    dependencies:
-      '@rspack/core': 2.2.8
-      '@voguh/unichat-widgets': https://github.com/voguh/unichat/releases/download/1.5.0-beta.7/unichat-widgets-1.5.0-beta.7.tgz
-
-  '@voguh/unichat-widgets@https://github.com/voguh/unichat/releases/download/1.5.0-beta.7/unichat-widgets-1.5.0-beta.7.tgz':
+  '@voguh/unichat-api@https://github.com/voguh/unichat/releases/download/1.5.0-beta.8/unichat-api-1.5.0-beta.8.tgz':
     dependencies:
       '@types/jquery': 3.5.32
+
+  '@voguh/unichat-widgets-rspack@https://github.com/voguh/unichat-widgets-rspack/releases/download/0.2.0/unichat-widgets-rspack-0.2.0.tgz(@rspack/core@2.2.8)(@voguh/unichat-api@https://github.com/voguh/unichat/releases/download/1.5.0-beta.8/unichat-api-1.5.0-beta.8.tgz)':
+    dependencies:
+      '@rspack/core': 2.2.8
+      '@voguh/unichat-api': https://github.com/voguh/unichat/releases/download/1.5.0-beta.8/unichat-api-1.5.0-beta.8.tgz
 
   argparse@2.0.1: {}
 
